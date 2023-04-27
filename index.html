@@ -35,7 +35,7 @@
 
         <!-- Aca va el navbar -->
 
-        <nav class="navbar navbar-expand-lg fixed-top bg-transparent ">
+        <nav id="inicio" class="navbar navbar-expand-lg fixed-top bg-transparent ">
             <div class="container-fluid px-5 ">
     
                 <a class="navbar-brand " href="#">
@@ -50,16 +50,16 @@
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav ms-auto ">
                         <li class="nav-item text">
-                            <a class="nav-link text-white active" aria-current="page" href="#">Inicio</a>
+                            <a class="nav-link text-white active" aria-current="page" href="#inicio">Inicio</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-white" href="#">Quienes somos</a>
+                            <a class="nav-link text-white" href="#somos">Quienes somos</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-white" href="#">Destacados</a>
+                            <a class="nav-link text-white" href="#destacados">Destacados</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-white" href="#">Contacto</a>
+                            <a class="nav-link text-white" href="#contacto">Contacto</a>
                         </li>
     
                     </ul>
@@ -69,7 +69,7 @@
 
         <!-- carrusel -->
 
-        <div id="carouselExampleAutoplaying" class="carousel slide carousel-fade" data-bs-ride="carousel">
+        <div  id="carouselExampleAutoplaying" class="carousel slide carousel-fade" data-bs-ride="carousel">
             <div class="carousel-inner">
               <div class="carousel-item active" data-bs-interval="5000">
                 <img src="assets/img/carousel1.jpg" class="d-block w-100" alt="...">
@@ -95,7 +95,7 @@
 
             <!-- iconos -->
 
-            <h5 class="text-center pt-5 pb-3 fs-2">¿QUIENES SOMOS?</h5>
+            <h5 id="somos" class="text-center pt-5 pb-3 fs-2">¿QUIENES SOMOS?</h5>
 
             <hr>     
 
@@ -125,7 +125,7 @@
             
             <!-- Tarjetas -->
 
-            <h5 class="text-center pt-5 pb-3 fs-2">DESTACADOS</h5>
+            <h5 id="destacados" class="text-center pt-5 pb-3 fs-2">DESTACADOS</h5>
 
             <hr>  
 
@@ -201,7 +201,7 @@
             </div>
 
             <!-- formulario -->
-            <h5 class="text-center pt-5 pb-3 fs-2">CONTACTANOS</h5>
+            <h5 id="contacto" class="text-center pt-5 pb-3 fs-2">CONTACTANOS</h5>
 
             <hr>    
 
@@ -250,50 +250,32 @@
         
                 </div>
             </div>
-
-
         </footer>
 
              <!-- Modal 1 -->
-    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h1 class="modal-title fs-5" id="exampleModalLabel">Uno de los mas Destacados</h1>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h1 class="modal-title fs-5" id="exampleModalLabel">Uno de los mas Destacados</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <img src="assets/img/carousel1.jpg" class="img-fluid" alt="">
+                            <br>
+                            <p>
+                                El desierto de Atacama es el "lugar no polar más árido de la Tierra".​​​​​​ Se extiende por las regiones naturales del Norte Grande y el Norte Chico de Chile, abarcando las regiones de Arica y Parinacota, Tarapacá, Antofagasta, Atacama y el norte de la región de Coquimbo
+                            </p>
+
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">cerrar</button>
+                            <button type="button" class="btn btn-primary">Siguiente</button>
+                        </div>
+                    </div>
                 </div>
-                <div class="modal-body">
-                    <img src="assets/img/carousel1.jpg" class="img-fluid" alt="">
-                    <br>
-                    <p>
-                        El desierto de Atacama es el "lugar no polar más árido de la Tierra".​​​​​​ Se extiende por las regiones naturales del Norte Grande y el Norte Chico de Chile, abarcando las regiones de Arica y Parinacota, Tarapacá, Antofagasta, Atacama y el norte de la región de Coquimbo
-                    </p>
-
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">cerrar</button>
-                    <button type="button" class="btn btn-primary">Siguiente</button>
-                </div>
-            </div>
-        </div>
-    </div>
-
-
-        
-
-        
-
+            </div>   
             
-  
-        </section>
-  
-
-
-        
-
-
-
-
         <!-- jquery -->
 
         <script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
